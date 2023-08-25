@@ -1,0 +1,23 @@
+.ImgFooterDiv {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: black;
+
+  &_BigDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  &_Img {
+    width: 200px;
+    height: 200px;
+  }
+  color: white;
+  &_content {
+    padding: 20px;
+  }
+}

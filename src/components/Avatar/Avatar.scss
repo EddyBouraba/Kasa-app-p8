@@ -1,0 +1,54 @@
+@import "../../style/variables.scss";
+.MainDivAvatar {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  &_Name {
+    color: $textcolor;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  &_Owner {
+    margin-top: 20px;
+    img {
+      width: 64px;
+      height: 64px;
+      left: 1273px;
+      top: 567px;
+      border-radius: 50px;
+      background: #C4C4C4;
+    }
+  }
+
+
+}
+.MainDivRate {
+  margin-left: -25px;
+  img {
+    padding: 0 5px 0 0;
+  }
+}
+
+
+// init responsive media
+@media screen and (max-width: 400px) {
+
+  .MainDivAvatar {
+    position: absolute;
+    bottom: 130px;
+    right: 20px;
+  }
+  .MainDivRate {
+    margin-left: -45px;
+    position: absolute;
+    display: flex;
+    bottom: 175px;
+    img {
+      width: 20px;
+    }
+  }
+}

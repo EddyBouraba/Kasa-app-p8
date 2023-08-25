@@ -1,0 +1,51 @@
+@import "../../style/variables.scss";
+
+.LocationLinks{
+  text-decoration: none;
+  &_Card {
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 25px;
+    background-size: cover;
+    transition: all 0.5s 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px -50px 40px inset;
+    /*filter: brightness(85%);*/
+  }
+  &_Card:hover {
+    transform: scale(1.1);
+  }
+  &_Title {
+    margin-top: auto;
+    position: relative;
+    color: #ffffff;
+    /*text-shadow: 5px 5px 5px white;*/
+    height: 52px;
+    font-weight: 600;
+    width: 230px;
+    Left: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+  }
+}
+.BigContent {
+  &_TitleHost_Text {
+    color: $textcolor;
+  }
+}
+.body_location_page {
+  margin-top: -100px;
+}
+// initier le responsive @media
+@media screen and (max-width: 400px) {
+  .LocationLinks_Card {
+    width: 320px;
+    height: 250px;
+    transition: unset;
+  }
+  .LocationLinks_Title {
+    font-size: 17px;
+  }
+}
